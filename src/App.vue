@@ -2,7 +2,7 @@
   <div id="app">
     <div class="page-header">
       <h1>Канбан доска</h1>
-      <p class="lead">Тестовое задание на разработку канбан доски с использованием Vue.js</p>
+      <p class="lead">Приложение написано с использованием VueJS</p>
     </div>
     <MenuBar></MenuBar>
     <router-view/>
@@ -20,9 +20,7 @@ export default {
 
 <style lang="scss" scoped>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
   text-align: center;
-  color: #2c3e50;
 }
 
 .page-header {
@@ -31,17 +29,5 @@ export default {
 
 .page-header h1 {
   font-weight: 300;
-}
-
-.card {
-  margin-bottom: 10px;
-}
-
-.card:last-child {
-  margin-bottom: 25px;
-}
-
-.card-block {
-  padding: 15px;
 }
 </style>

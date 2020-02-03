@@ -7,9 +7,11 @@
     >
       <input
         type="text"
+        class="form-control"
         placeholder="Добавить новую задачу в журнал..."
         v-model="itemText"
       >
+      <span class="text-muted" v-show="itemText.length > 0">enter</span>
     </form>
   </div>
 </template>
@@ -42,19 +44,21 @@ export default {
   margin-bottom: 40px;
 }
 
-.add-item input {
-  outline: none;
-  border: 0;
-  border-bottom: 1px solid #adb5bd;
-  width: 100%;
-  padding: 5px 0;
-  transition: all 0.25s;
-  background: inherit;
-  color: #000;
-  cursor: pointer;
+form {
+		position: relative;
+	}
+
+.form-control {
+  font-size: 16px;
+  padding-right: 50px;
 }
 
-.add-item input:focus {
-  border-bottom-color: #4582EC;
+span {
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: absolute;
+  top: 19px;
+  right: 0;
 }
 </style>
